@@ -54,7 +54,7 @@
         reg = <0>;
         spi-max-frequency = <2000000>;
         irq-gpios = <&xiao_d 8 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
-        cpi = <800>;
+        cpi = <1000>;
         //swap-xy;
         evt-type = <INPUT_EV_REL>;
         x-input-code = <INPUT_REL_X>;
@@ -82,6 +82,6 @@
             <&zip_scroll_snap>,
             <&zip_scroll_transform INPUT_TRANSFORM_X_INVERT>,   //スクロールのX軸反転
             //<&zip_scroll_transform INPUT_TRANSFORM_Y_INVERT>,   //スクロールのY軸反転
-            <&zip_scroll_scaler 1 10>;                           //スクロール量を1/10倍
+            <&zip_scroll_scaler 1 12>;                           //スクロール量を1/12倍
     };
 };
